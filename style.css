@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 56%;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    position: relative;
+    padding: 4% 8%;
+}
+.right{
+    height: 100%;
+    width: 44%;
+    background-image: url(./images/hero-desktop.jpg);
+    background-size: cover;
+}
+h1{
+    font-size: 54px;
+    white-space: pre-line;
+    letter-spacing: 16px;
+    line-height: 110%;
+}
+#nag1{
+    margin-top: 90px;
+    font-weight: 300;
+    color: hsl(0, 36%, 70%);
+}
+p{
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    color: hsl(0, 36%, 70%);
+}
+.form{
+    position: relative;
+}
+#error{
+    position: absolute;
+    top: 40px;
+    left: 48%;
+}
+.info{
+    color: red;
+    margin: 1% 1%;
+}
+.valid{
+    color: black;
+    font-size: larger;
+}
+.hidden{
+    display: none;
+}
+.arrowbg{
+    width: 90px;
+    height: 44px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 8px 8px 30px -10px black;
+    border: none;
+    border-radius: 22px;
+    position: absolute;
+    top: 30px;
+    left: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    cursor: pointer;
+}
+.arrowbg:hover{
+    transform: scale(1.2);
+    background: linear-gradient(135deg, hsl(0, 80%, 90%), hsl(0, 74%, 80%));
+}
+input{
+    margin-top: 30px;
+    border: 2px solid hsl(0, 6%, 24%);
+    width: 60%;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 6%;
+    font-size: larger;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+.redborder{
+    border: 2px solid red;
+}
+::placeholder{
+    color: hsl(0, 36%, 70%);
+}
+
+@media only screen and (max-width: 800px){
+    body{
+        display: inline;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-size: cover;
+        background-position: center center;
+        box-sizing: border-box;
+        position: relative;
+        padding: 4% 8%;
+    }
+    .right{
+        position: absolute;
+        top: 13%;
+        width: 100%;
+        height: 410px;
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: cover;
+    }
+    #nag1{
+        margin-top: 500px;
+    }
+    .form{
+        height: 200px;
+    }
+}
